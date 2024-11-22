@@ -1,0 +1,304 @@
+
+
+.header {
+  background: linear-gradient(90deg, #ff0000, #d50100);
+  padding: 80px;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 500px;
+  box-shadow: 0px 0px 80px 50px rgb(219, 48, 48);
+}
+
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+  background: #d50100;
+  z-index: 3;
+ 
+}
+
+.competencias {
+  text-align: center;
+  padding: 1000px 20px;
+  background: #d50100;
+  color: black;
+  z-index: -2;
+
+}
+.comp{
+  position: absolute;
+  margin-top: -670px;
+  margin-left: -420px;
+  z-index: 2;
+}
+.deidas{
+  width: 43%;
+  position: absolute;
+  margin-top: -200px;
+ margin-left: -310px;
+}
+.hora{
+  position: absolute;
+  margin-top: -200px;
+ margin-left: -700px;
+}
+.local{
+  position: absolute;
+  margin-top: -200px;
+ margin-left: 340px;
+}
+.sala1{
+  position: absolute;
+  margin-top: 100px;
+ margin-left: -570px;
+}
+.grupo1{
+  margin-left: -550px;
+  position: absolute;
+  margin-top: -150px;
+  z-index: 3;
+}
+.intro-text{
+  z-index: 3;
+}
+.programacao {
+  z-index: 3;
+  margin-top: -300px;
+  text-align: center;
+  padding: 400px 20px;
+  background: #d50100;
+}
+.prog{
+  z-index: 3;
+  position: absolute;
+margin-left: -550px;
+margin-top: -340px;
+}
+.mod{
+  z-index: 3;
+  position: absolute;
+  margin-left: 380px;
+margin-top: -340px;
+}
+.segundo{
+  z-index: 3;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: -300px;
+}
+.bolinhas2 {
+  position: absolute;
+  z-index: 0; 
+  margin-left: -500px;
+  margin-top: -1190px;
+  
+}
+
+.bolinhas {
+  position: absolute;
+  z-index: 0; /* Também fica abaixo do conteúdo */
+  margin-top: -590px;
+  margin-left: -900px;
+  
+}
+.quemcab{
+  width: 103%;
+/* offset-x | offset-y | blur-radius | color */
+text-shadow: 2px 2px 5px black;
+margin-left: -25px;
+}
+.quem{
+  position: absolute;
+  text-align: center;
+  font-size: 80px;
+  margin-left: 450px;
+  margin-top: -230px;
+  color: #fcfbfb;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.quem-somos {
+  
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #d50100;
+}
+
+.alunos{
+  max-width: 90%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.terc{
+  margin-top: -120px;
+}
+.projeto-final {
+  text-align: center;
+  padding: 110px 20px;
+  background-color: #d50100;
+}
+.proj{
+  color: #fcfbfb;
+  position: absolute;
+  text-align: center;
+  font-size: 90px;
+  margin-top: -240px;
+  margin-left: 260px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projeto-card {
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.projeto-card h2 {
+  margin-top: -40px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  color: #fcfbfb;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-card img {
+  margin-left: -50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+/* Estilos para a imagem dentro do card do grupo */
+.projeto-card img {
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Efeito de aumento ao passar o mouse */
+.projeto-card img:hover {
+  transform: scale(1.08); /* Aumenta a imagem em 10% */
+}
+.footer {
+  background-color: #AF0303;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+/* Aplica o efeito a todas as imagens, exceto bolinhas, bolinhas2, cabeçalho, quemcab e logo */
+img:not(.bolinhas):not(.bolinhas2):not(.cabeçalho):not(.quemcab):not(.logo):not(.alunos) {
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de aumento ao passar o mouse */
+img:not(.bolinhas):not(.bolinhas2):not(.cabeçalho):not(.quemcab):not(.logo):not(.alunos):hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  z-index: -5;
+}
+
+body{
+  background-color: #000000;
+  font-family: "Varela Round", sans-serif;
+  overflow-x: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.cabeçalho{
+  width: 103%;
+/* offset-x | offset-y | blur-radius | color */
+text-shadow: 2px 2px 5px rgb(255, 255, 255);
+margin-left: -25px;
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 100px;
+  list-style: none;
+}
+
+.menu li {
+  width:500px;
+  height: 70px;
+  transition: background-position-x 1ss linear;
+  text-align: center;
+  
+  a {
+    font-size: 20px;
+    color: #fcfbfb;
+    text-decoration: none;
+    transition: all 0.3s5s;
+  }
+
+  &:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 0.95ss;
+  }
+
+  &:hover a {
+    color: #d94f5c;
+  }
+
+  &:not(:last-child) {
+    margin-right: 70px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+/*botão*/
+
+/* Estilos para o botão voltar ao topo */
+#btnTop {
+  display: none; /* O botão fica invisível até ser necessário */
+  position: fixed; /* Fixa o botão na tela mesmo com scroll */
+  bottom: 20px; /* Posiciona o botão 20px acima da borda inferior */
+  right: 30px; /* Posiciona o botão 30px à esquerda da borda direita */
+  z-index: 99; /* Coloca o botão à frente de outros elementos */
+  font-size: 18px; /* Tamanho do texto no botão */
+  background-color: #ffffff; /* Cor de fundo do botão */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  border: none; /* Remove bordas */
+  outline: none; /* Remove contorno */
+  cursor: pointer; /* Adiciona cursor de mão ao passar por cima */
+  padding: 15px; /* Espaçamento interno do botão */
+  border-radius: 300px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+#btnTop:hover {
+  background-color: #ff0000; /* Muda a cor de fundo quando o botão é acionado */
+}
+
+
