@@ -300,163 +300,120 @@ margin-left: -25px;
 #btnTop:hover {
   background-color: #ff0000; /* Muda a cor de fundo quando o botão é acionado */
 }
-/* Estilos gerais para dispositivos móveis */
+/* Ajustes gerais para dispositivos móveis */
 @media (max-width: 768px) {
-  /* Reduzir o tamanho das imagens */
-  img {
-      max-width: 100%; /* Faz com que todas as imagens não excedam a largura do seu contêiner */
-      height: auto; /* Mantém a proporção da imagem */
-      display: block; /* Garante que as imagens sejam tratadas como blocos para centralização */
-      margin: 0 auto; /* Centraliza as imagens */
-  }
-
   .header {
-      padding: 20px; /* Reduz o padding do cabeçalho */
+    padding: 50px 20px; /* Reduz o padding */
   }
 
   .logo img {
-      max-width: 200px; /* Reduz o tamanho da logo em telas menores */
+    max-width: 100%; /* Faz com que a logo ocupe o tamanho máximo disponível */
+    box-shadow: none; /* Remove a sombra em telas pequenas */
   }
 
   .intro {
-    position: relative; /* Permite a sobreposição */
-    padding: 50px 20px; /* Ajuste de padding */
-    text-align: center;
+    padding: 30px 10px; /* Reduz o padding */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
   }
-  .cabeçalho {
-    width: 125%;
-    margin-left: 100px;
-    text-shadow: 2px 2px 5px rgb(255, 255, 255);
-    margin-left: -25px;
-    font-size: 60px; /* Aumenta o tamanho da fonte */
-    position: relative; /* Permite que os elementos filhos sejam posicionados em relação a este */
-    z-index: 1; /* Garante que o cabeçalho fique atrás do grupo1 */
+
+  .competencias, .programacao, .quem-somos, .projeto-final {
+    padding: 30px 10px; /* Reduz o padding */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
   }
-.grupo1 {
-  position: absolute; /* Permite a sobreposição */
-  bottom: -30px; /* Alinha ao fundo do cabeçalho */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajusta a posição para o centro */
-  z-index: 2; /* Coloca em cima do cabeçalho */
-  width: 80%; /* Ajusta a largura */
-}
-.competencias {
-  position: relative; /* Adicione isso */
-  margin-top: 80px; /* Espaço antes da seção de competências */
-  display: flex;
-  flex-direction: column; /* Alinha verticalmente */
-  align-items: center; /* Centraliza os itens */
-  padding: 20px 10px; /* Ajuste de padding */
-}
-.hora, .deidas, .local {
-  width: 30%; /* Ajusta a largura para 30% cada um */
-  margin: 10px 0; /* Espaço entre os itens */
-}
-.hora {
-  order: 1; /* Ordem de exibição */
-}
 
-.deidas {
-  order: 2; /* Ordem de exibição */
-}
-
-.local {
-  order: 3; /* Ordem de exibição */
-}
-.programacao {
-  display: flex;
-  flex-direction: column; /* Alinha verticalmente */
-  align-items: center; /* Centraliza os itens */
-  padding: 50px 20px; /* Ajuste de padding */
-  margin-top: 40px; /* Espaço antes da seção de programação */
-}
-.prog, .mod {
-  width: 45%; /* Ajusta a largura para caber lado a lado */
-  margin: 10px; /* Espaço entre os itens */
-}
-.segundo {
-  margin-top: 20px; /* Espaço acima do segundo */
-  width: 80%; /* Ajusta a largura */
-  text-align: center; /* Centraliza o texto */
-}
-
-
-  .quem {
-      font-size: 20px; /* Reduz o tamanho da fonte para "Quem somos?" */
-      display: block; /* Garante que 'quem' ocupe uma linha inteira */
-      text-align: center; /* Centraliza o texto, se desejado */
-      margin: 20px 0; /* Espaço acima e abaixo do elemento */
-    }
-
-  .proj {
-      font-size: 30px; /* Reduz o tamanho da fonte do título do projeto final */
-      display: block; /* Garante que 'quem' ocupe uma linha inteira */
-      text-align: center; /* Centraliza o texto, se desejado */
-      margin: 20px 0; /* Espaço acima e abaixo do elemento */
-    }
-
-  .projeto-card {
-      padding: 10px; /* Ajusta o padding dos cards */
-      width: 90%; /* Faz os cards ocuparem 90% da largura */
-      margin: 0 auto; /* Centraliza os cards */
+  .comp, .deidas, .hora, .local, .sala1, .grupo1, .segundo, .prog, .mod, .quemsomos, .proj {
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
   }
-  .projetos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-    align-items: center; /* Adiciona esta linha para centralizar as divs dos grupos */
-  }
-  
-  .projeto-card h2 {
-    margin-top: -40px;
-    margin-bottom: 30px;
-    font-size: 40px; /* Reduz o tamanho da fonte para os títulos dos grupos */
-    color: #fcfbfb;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-  
-  .quemcab {
-    width: 100%; /* Altera para 100% para ocupar toda a largura */
-    margin: 0 auto; /* Centraliza o retângulo */
-  }
-  .menur {
-    display: flex;
-    justify-content: center; /* Centraliza o menu */
-    margin-top: 10px; /* Espaçamento opcional entre a introdução e o menu */
-}
 
-.menu {
-  top: 0; /* Alinha o menu ao topo da página */
-  left: 0; /* Alinha o menu à esquerda da página */
-    display: flex; /* Mantém os itens do menu em linha */
-    justify-content: center; /* Centraliza os itens do menu */
-    align-items: center; /* Alinha os itens verticalmente */
-    max-width: 500px; /* Garante que o menu não exceda a largura da tela */
-    list-style: none;
-    padding:10px 0; /* Remove o padding do menu */
-    margin: 0; /* Remove a margem do menu */
-}
+  .menu {
+    flex-direction: column; /* Alinha os itens do menu em coluna */
+    justify-content: flex-start; /* Alinha os itens para o topo */
+    margin-top: 10px;
+    height: auto;
+  }
 
   .menu li {
-      margin: 0 15px; /* Espaçamento entre os itens do menu */
+    width: 100%; /* Faz os itens do menu ocuparem toda a largura */
+    height: auto;
   }
 
-  .menu a {
-      font-size: 12px; /* Ajusta o tamanho da fonte dos links do menu */
-      transition: all 0.3s ease; /* Mantém a transição suave */
-      text-decoration: none;
-    }
-    .menu a:hover {
-      color: #d94f5c; /* Muda a cor do texto quando o mouse está sobre o link */
-    }
-  /* Botão para voltar ao topo */
-  #btnTop {
-      bottom: 10px; /* Ajusta a posição do botão */
-      right: 10px; /* Ajusta a posição do botão */
-      padding: 10px; /* Ajusta o padding do botão */
+  .menu li a {
+    font-size: 18px; /* Ajusta o tamanho da fonte no menu */
   }
- 
+
+  .projeto-card img {
+    max-width: 100%; /* Garante que a imagem do projeto ocupe a largura total */
+    margin-left: 0; /* Remove o deslocamento da imagem */
+  }
+
+  .projeto-card h2 {
+    font-size: 30px; /* Ajusta o tamanho da fonte do título */
+  }
+
+  .footer {
+    padding: 30px 10px; /* Reduz o padding do rodapé */
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+  }
+
+  /* Ajuste do botão voltar ao topo */
+  #btnTop {
+    bottom: 20px;
+    right: 20px; /* Ajusta a posição do botão no canto inferior direito */
+    padding: 12px; /* Reduz o padding do botão */
+  }
 }
 
+/* Ajuste para telas pequenas (menor que 480px, como celulares) */
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 80%; /* Logo ainda menor para telas pequenas */
+  }
+
+  .header {
+    padding: 30px 10px; /* Diminui o padding */
+  }
+
+  .intro, .competencias, .programacao, .quem-somos, .projeto-final {
+    padding: 20px 10px; /* Menos padding para telas pequenas */
+    font-size: 16px; /* Menor tamanho de fonte */
+  }
+
+  .menu {
+    margin-top: 0;
+    padding: 0;
+    flex-direction: column; /* Menu em coluna */
+  }
+
+  .menu li {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+  }
+
+  .menu li a {
+    font-size: 16px; /* Ajuste do tamanho da fonte */
+  }
+
+  .projeto-card img {
+    width: 100%;
+    height: auto; /* Garante que a imagem se ajuste à tela */
+  }
+
+  .projeto-card h2 {
+    font-size: 26px; /* Reduz o tamanho da fonte do título */
+  }
+
+  .footer {
+    padding: 20px 10px;
+    font-size: 12px; /* Reduz o tamanho da fonte no rodapé */
+  }
+
+  /* Ajuste do botão voltar ao topo */
+  #btnTop {
+    bottom: 10px;
+    right: 10px; /* Coloca o botão no canto inferior direito */
+    padding: 10px;
+  }
+}
