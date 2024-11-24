@@ -432,8 +432,6 @@ margin-left: -25px;
   .menu a {
       font-size: 16px; /* Ajusta o tamanho da fonte dos links do menu */
   }
-}/* Estilos gerais para dispositivos móveis */
-@media (max-width: 768px) {
   .container {
       display: flex;
         justify-content: center; /* Centraliza os itens dentro do contêiner */
@@ -450,8 +448,7 @@ margin-left: -25px;
 
               .data {
                 text-align: right; /* Alinha o texto à direita */
-}
-  }
+ }
   .menu {
     display: flex; /* Mantém o menu em linha */
     justify-content: center; /* Centraliza os itens */
@@ -528,27 +525,5 @@ margin-left: -25px;
       bottom: 10px; /* Ajusta a posição do botão */
       right: 10px; /* Ajusta a posição do botão */
       padding: 10px; /* Ajusta o padding do botão */
-  }
-
-/* Estilos para telas menores que 480px */
-@media (max-width: 480px) {
-  .header {
-      padding: 20px;
-  }
-
-  .logo img {
-      max-width: 200px; /* Reduz ainda mais o tamanho da logo */
-  }
-
-  .quem {
-      font-size: 40px; /* Reduz o tamanho da fonte ainda mais */
-  }
-
-  .proj {
-      font-size: 30px; /* Reduz o tamanho da fonte do título do projeto final */
-  }
-
-  .menu a {
-      font-size: 16px; /* Ajusta o tamanho da fonte dos links do menu */
   }
 }
