@@ -321,7 +321,12 @@ margin-left: -25px;
   .intro {
       padding: 30px 10px; /* Ajusta o padding */
   }
-
+  .cabeçalho {
+    width: 105%;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    margin-left: -25px;
+    font-size: 60px; /* Aumenta o tamanho da fonte */
+}
   .competencias,
   .programacao,
   .quem-somos,
@@ -395,19 +400,6 @@ margin-left: -25px;
       right: 10px; /* Ajusta a posição do botão */
       padding: 10px; /* Ajusta o padding do botão */
   }
-  .comp,
-.deidas,
-.hora,
-.local,
-.sala1,
-.grupo1,
-.prog,
-.mod,
-.segundo,
-.bolinhas2,
-.bolinhas {
-  position: relative; /* Mudado de absolute para relative */
-  margin-top: 20px; /* Ajuste a margem conforme necessário */
-}
+ 
 }
 
