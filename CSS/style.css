@@ -342,7 +342,27 @@ margin-left: -25px;
       width: 90%; /* Faz os cards ocuparem 90% da largura */
       margin: 0 auto; /* Centraliza os cards */
   }
-
+  .projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center; /* Adiciona esta linha para centralizar as divs dos grupos */
+  }
+  
+  .projeto-card h2 {
+    margin-top: -40px;
+    margin-bottom: 30px;
+    font-size: 40px; /* Reduz o tamanho da fonte para os títulos dos grupos */
+    color: #fcfbfb;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .quemcab {
+    width: 100%; /* Altera para 100% para ocupar toda a largura */
+    margin: 0 auto; /* Centraliza o retângulo */
+  }
   .menu {
       flex-direction: column; /* Muda a direção do menu para coluna */
       max-width: 100%; /* Altera a largura máxima */
