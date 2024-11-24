@@ -366,7 +366,7 @@ margin-left: -25px;
   .menur {
     display: flex;
     justify-content: center; /* Centraliza o menu */
-    margin-top: 10px; /* Espaçamento opcional entre a introdução e o menu */
+    margin-top: 5px; /* Espaçamento opcional entre a introdução e o menu */
 }
 
 .menu {
@@ -380,13 +380,14 @@ margin-left: -25px;
 }
 
   .menu li {
-      width: 100%; /* Faz os itens do menu ocuparem toda a largura */
-      margin: 5px 0; /* Espaçamento entre os itens do menu */
+      margin: 0 px; /* Espaçamento entre os itens do menu */
   }
 
   .menu a {
-      font-size: 18px; /* Ajusta o tamanho da fonte dos links do menu */
-  }
+      font-size: 12px; /* Ajusta o tamanho da fonte dos links do menu */
+      transition: all 0.3s ease; /* Mantém a transição suave */
+      text-decoration: none;
+    }
 
   /* Botão para voltar ao topo */
   #btnTop {
