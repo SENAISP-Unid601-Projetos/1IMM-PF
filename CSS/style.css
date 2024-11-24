@@ -529,7 +529,6 @@ margin-left: -25px;
       right: 10px; /* Ajusta a posição do botão */
       padding: 10px; /* Ajusta o padding do botão */
   }
-}
 
 /* Estilos para telas menores que 480px */
 @media (max-width: 480px) {
