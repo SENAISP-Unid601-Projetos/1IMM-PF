@@ -305,7 +305,17 @@ margin-left: -25px;
   .header {
     padding: 50px 20px; /* Reduz o padding */
   }
-
+  .cabeçalho {
+    transform: scale(1.15); /* Aumenta o tamanho para 115% */
+    transform-origin: center center; /* Mantém o aumento centralizado */
+  }
+  
+  /* Aumenta o tamanho do texto dentro de quemcab para 115% */
+  .quemcab {
+    transform: scale(1.15); /* Aumenta o tamanho para 115% */
+    transform-origin: center center; /* Mantém o aumento centralizado */
+    font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
+  }
   .logo img {
     max-width: 80%; /* Faz com que a logo ocupe 80% da largura disponível */
     box-shadow: none; /* Remove a sombra em telas pequenas */
@@ -329,6 +339,18 @@ img {
     position: relative;
     margin-top: 0;
     margin-left: 0;
+  }
+  .programacao {
+    display: flex; /* Usamos flexbox para alinhar as seções lado a lado */
+    justify-content: space-between; /* Espaço entre as duas seções */
+    gap: 20px; /* Adiciona um pequeno espaço entre .prog e .mod */
+    padding: 20px; /* Ajusta o padding da seção */
+  }
+
+  .prog, .mod {
+    flex: 1; /* Faz com que .prog e .mod ocupem o mesmo espaço */
+    text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
+    max-width: 48%; /* Limita a largura máxima para que ambas fiquem lado a lado */
   }
 /* Ajustes para o "Quem Somos" */
 .quem {
@@ -406,6 +428,7 @@ img {
     bottom: 20px;
     right: 20px; /* Ajusta a posição do botão no canto inferior direito */
     padding: 12px; /* Reduz o padding do botão */
+    display: none;
   }
 
 /* Ajuste para telas pequenas (menor que 480px, como celulares) */
@@ -413,7 +436,17 @@ img {
   .logo img {
     max-width: 70%; /* Logo ainda menor para telas muito pequenas */
   }
-
+  .cabeçalho {
+    transform: scale(1.15); /* Aumenta o tamanho para 115% */
+    transform-origin: center center; /* Mantém o aumento centralizado */
+  }
+  
+  /* Aumenta o tamanho do texto dentro de quemcab para 115% */
+  .quemcab {
+    transform: scale(1.15); /* Aumenta o tamanho para 115% */
+    transform-origin: center center; /* Mantém o aumento centralizado */
+    font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
+  }
   .header {
     padding: 30px 10px; /* Diminui o padding */
   }
@@ -475,11 +508,23 @@ img {
     padding: 20px 10px;
     font-size: 12px; /* Reduz o tamanho da fonte no rodapé */
   }
+  .programacao {
+    display: flex; /* Usamos flexbox para alinhar as seções lado a lado */
+    justify-content: space-between; /* Espaço entre as duas seções */
+    gap: 20px; /* Adiciona um pequeno espaço entre .prog e .mod */
+    padding: 20px; /* Ajusta o padding da seção */
+  }
 
+  .prog, .mod {
+    flex: 1; /* Faz com que .prog e .mod ocupem o mesmo espaço */
+    text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
+    max-width: 48%; /* Limita a largura máxima para que ambas fiquem lado a lado */
+  }
   /* Ajuste do botão voltar ao topo */
   #btnTop {
     bottom: 10px;
     right: 10px; /* Coloca o botão no canto inferior direito */
     padding: 10px;
+    display: none;
   }
 }
