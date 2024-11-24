@@ -319,28 +319,81 @@ margin-left: -25px;
   }
 
   .intro {
-      padding: 30px 10px; /* Ajusta o padding */
-  }
+    position: relative; /* Permite a sobreposição */
+    padding: 50px 20px; /* Ajuste de padding */
+}
   .cabeçalho {
-    width: 105%;
+    width: 125%;
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
     margin-left: -25px;
     font-size: 60px; /* Aumenta o tamanho da fonte */
+}
+.grupo1 {
+  position: absolute; /* Permite a sobreposição */
+  bottom: 0; /* Alinha ao fundo do cabeçalho */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a posição para o centro */
+  z-index: 1; /* Coloca em cima do cabeçalho */
+  width: 80%; /* Ajusta a largura */
+}
+.competencias {
+  margin-top: 80px; /* Espaço antes da seção de competências */
+  display: flex;
+  flex-direction: column; /* Alinha verticalmente */
+  align-items: center; /* Centraliza os itens */
+  padding: 20px 0; /* Ajuste de padding */
+}
+.hora, .deidas, .local {
+  width: 30%; /* Ajusta a largura para 30% cada um */
+  margin: 10px 0; /* Espaço entre os itens */
+}
+.hora {
+  order: 1; /* Ordem de exibição */
+}
+
+.deidas {
+  order: 2; /* Ordem de exibição */
+}
+
+.local {
+  order: 3; /* Ordem de exibição */
+}
+.programacao {
+  display: flex;
+  flex-direction: column; /* Alinha verticalmente */
+  align-items: center; /* Centraliza os itens */
+  padding: 50px 20px; /* Ajuste de padding */
+}
+.prog, .mod {
+  width: 45%; /* Ajusta a largura para caber lado a lado */
+  margin: 10px; /* Espaço entre os itens */
+}
+.segundo {
+  margin-top: 20px; /* Espaço acima do segundo */
+  width: 80%; /* Ajusta a largura */
+  text-align: center; /* Centraliza o texto */
+}
 }
   .competencias,
   .programacao,
   .quem-somos,
   .projeto-final {
-      padding: 50px 10px; /* Ajusta o padding para seções */
+      padding: 30px 10px; /* Ajusta o padding para seções */
   }
 
   .quem {
-      font-size: 40px; /* Reduz o tamanho da fonte para "Quem somos?" */
-  }
+      font-size: 20px; /* Reduz o tamanho da fonte para "Quem somos?" */
+      display: block; /* Garante que 'quem' ocupe uma linha inteira */
+      text-align: center; /* Centraliza o texto, se desejado */
+      margin: 20px 0; /* Espaço acima e abaixo do elemento */
+    }
 
   .proj {
       font-size: 30px; /* Reduz o tamanho da fonte do título do projeto final */
-  }
+      display: block; /* Garante que 'quem' ocupe uma linha inteira */
+      text-align: center; /* Centraliza o texto, se desejado */
+      margin: 20px 0; /* Espaço acima e abaixo do elemento */
+    }
 
   .projeto-card {
       padding: 10px; /* Ajusta o padding dos cards */
@@ -371,7 +424,7 @@ margin-left: -25px;
   .menur {
     display: flex;
     justify-content: center; /* Centraliza o menu */
-    margin-top: 5px; /* Espaçamento opcional entre a introdução e o menu */
+    margin-top: 10px; /* Espaçamento opcional entre a introdução e o menu */
 }
 
 .menu {
@@ -401,5 +454,5 @@ margin-left: -25px;
       padding: 10px; /* Ajusta o padding do botão */
   }
  
-}
+
 
