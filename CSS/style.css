@@ -434,10 +434,28 @@ margin-left: -25px;
   }
 }/* Estilos gerais para dispositivos móveis */
 @media (max-width: 768px) {
+  .container {
+      display: flex;
+        justify-content: center; /* Centraliza os itens dentro do contêiner */
+          flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
+          }
+
+          .local, .data {
+            flex: 1; /* Permite que local e data ocupem o espaço disponível */
+            }
+
+            .local {
+              text-align: left; /* Alinha o texto à esquerda */
+              }
+
+              .data {
+                text-align: right; /* Alinha o texto à direita */
+}
+  }
   .menu {
     display: flex; /* Mantém o menu em linha */
     justify-content: center; /* Centraliza os itens */
-    align-items: center; /* Alinha os itens verticalmente */
+    align-items: center; /* Alinha os itens vertiverticalmentecalmente */
     max-width: 100%; /* Largura máxima do menu */
     margin: 10px auto; /* Centraliza o menu */
     list-style: none; /* Remove os marcadores da lista */
