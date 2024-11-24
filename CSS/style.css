@@ -321,27 +321,31 @@ margin-left: -25px;
   .intro {
     position: relative; /* Permite a sobreposição */
     padding: 50px 20px; /* Ajuste de padding */
-}
+    text-align: center;
+  }
   .cabeçalho {
     width: 125%;
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
     margin-left: -25px;
     font-size: 60px; /* Aumenta o tamanho da fonte */
-}
+    position: relative; /* Permite que os elementos filhos sejam posicionados em relação a este */
+    z-index: 1; /* Garante que o cabeçalho fique atrás do grupo1 */
+  }
 .grupo1 {
   position: absolute; /* Permite a sobreposição */
-  bottom: 0; /* Alinha ao fundo do cabeçalho */
+  bottom: -30px; /* Alinha ao fundo do cabeçalho */
   left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Ajusta a posição para o centro */
-  z-index: 1; /* Coloca em cima do cabeçalho */
+  z-index: 2; /* Coloca em cima do cabeçalho */
   width: 80%; /* Ajusta a largura */
 }
 .competencias {
+  position: relative; /* Adicione isso */
   margin-top: 80px; /* Espaço antes da seção de competências */
   display: flex;
   flex-direction: column; /* Alinha verticalmente */
   align-items: center; /* Centraliza os itens */
-  padding: 20px 0; /* Ajuste de padding */
+  padding: 20px 10px; /* Ajuste de padding */
 }
 .hora, .deidas, .local {
   width: 30%; /* Ajusta a largura para 30% cada um */
@@ -363,6 +367,7 @@ margin-left: -25px;
   flex-direction: column; /* Alinha verticalmente */
   align-items: center; /* Centraliza os itens */
   padding: 50px 20px; /* Ajuste de padding */
+  margin-top: 40px; /* Espaço antes da seção de programação */
 }
 .prog, .mod {
   width: 45%; /* Ajusta a largura para caber lado a lado */
@@ -373,7 +378,7 @@ margin-left: -25px;
   width: 80%; /* Ajusta a largura */
   text-align: center; /* Centraliza o texto */
 }
-}
+
   .competencias,
   .programacao,
   .quem-somos,
@@ -458,5 +463,5 @@ margin-left: -25px;
       padding: 10px; /* Ajusta o padding do botão */
   }
  
-
+}
 
