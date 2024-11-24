@@ -323,7 +323,29 @@ margin-left: -25px;
     margin-top: 0;
     margin-left: 0;
   }
+/* Ajustes para o "Quem Somos" */
+.quem {
+  position: absolute;
+  text-align: center;
+  font-size: 80px;
+  margin-left: 450px;
+  color: #fcfbfb;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  
+  /* Ajustar a posição para estar entre .segundo e .terc */
+  top: calc(100% + 50px); /* Coloca o "Quem Somos" logo abaixo do .segundo */
+}
 
+.segundo {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: -300px;
+  z-index: 3;
+}
+
+.terc {
+  margin-top: -120px;
+}
   .menu {
     flex-direction: column; /* Alinha os itens do menu em coluna */
     justify-content: center; /* Centraliza os itens do menu */
@@ -402,7 +424,29 @@ margin-left: -25px;
     font-size: 16px; /* Ajuste do tamanho da fonte */
     padding: 10px 0; /* Adiciona mais espaço interno nos itens */
   }
+/* Ajustes para o "Quem Somos" */
+.quem {
+  position: absolute;
+  text-align: center;
+  font-size: 80px;
+  margin-left: 450px;
+  color: #fcfbfb;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  
+  /* Ajustar a posição para estar entre .segundo e .terc */
+  top: calc(100% + 50px); /* Coloca o "Quem Somos" logo abaixo do .segundo */
+}
 
+.segundo {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: -300px;
+  z-index: 3;
+}
+
+.terc {
+  margin-top: -120px;
+}
   .projeto-card img {
     width: 100%;
     height: auto; /* Garante que a imagem se ajuste à tela */
