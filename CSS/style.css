@@ -379,12 +379,6 @@ margin-left: -25px;
   text-align: center; /* Centraliza o texto */
 }
 
-  .competencias,
-  .programacao,
-  .quem-somos,
-  .projeto-final {
-      padding: 30px 10px; /* Ajusta o padding para seções */
-  }
 
   .quem {
       font-size: 20px; /* Reduz o tamanho da fonte para "Quem somos?" */
