@@ -363,11 +363,51 @@ margin-left: -25px;
       right: 10px; /* Ajusta a posição do botão */
       padding: 10px; /* Ajusta o padding do botão */
   }
+  .comp,
+.deidas,
+.hora,
+.local,
+.sala1,
+.grupo1,
+.prog,
+.mod,
+.segundo,
+.bolinhas2,
+.bolinhas {
+  position: relative; /* Mudado de absolute para relative */
+  margin-top: 20px; /* Ajuste a margem conforme necessário */
+}
 }
 
 /* Estilos para telas menores que 480px */
 @media (max-width: 480px) {
-  /* Reduzir o tamanho das imagens ainda mais */
+  
+  .menu {
+    display: flex; /* Mantém o menu em linha */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    max-width: 100%; /* Largura máxima do menu */
+    margin: 10px auto; /* Centraliza o menu */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+  }
+  .comp,
+.deidas,
+.hora,
+.local,
+.sala1,
+.grupo1,
+.prog,
+.mod,
+.segundo,
+.bolinhas2,
+.bolinhas {
+  position: relative; /* Mudado de absolute para relative */
+  margin-top: 20px; /* Ajuste a margem conforme necessário */
+}
+  .menu li {
+    margin: 0 10px; /* Espaçamento horizontal entre os itens */
+  }/* Reduzir o tamanho das imagens ainda mais */
   img {
       max-width: 100%; /* Faz com que todas as imagens não excedam a largura do seu contêiner */
       height: auto; /* Mantém a proporção da imagem */
@@ -394,6 +434,19 @@ margin-left: -25px;
   }
 }/* Estilos gerais para dispositivos móveis */
 @media (max-width: 768px) {
+  .menu {
+    display: flex; /* Mantém o menu em linha */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    max-width: 100%; /* Largura máxima do menu */
+    margin: 10px auto; /* Centraliza o menu */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+  }
+  
+  .menu li {
+    margin: 0 10px; /* Espaçamento horizontal entre os itens */
+  }
   .header {
       padding: 40px;
   }
