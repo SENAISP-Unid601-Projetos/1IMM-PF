@@ -300,8 +300,6 @@ margin-left: -25px;
 #btnTop:hover {
   background-color: #ff0000; /* Muda a cor de fundo quando o botão é acionado */
 }
-
-
 /* Estilos gerais para dispositivos móveis */
 @media (max-width: 768px) {
   .header {
@@ -328,7 +326,12 @@ margin-left: -25px;
   }
 
   .proj {
-      font-size: 60px; /* Reduz o tamanho da fonte */
+      font-size: 40px; /* Reduz o tamanho da fonte do título do projeto final */
+      text-align: center; /* Centraliza o texto */
+      margin: 20px auto; /* Adiciona margem para espaçamento */
+      white-space: nowrap; /* Impede que o texto quebre para a linha seguinte */
+      overflow: hidden; /* Esconde qualquer texto que não caiba em uma linha */
+      text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
   }
 
   .projeto-card {
@@ -351,8 +354,10 @@ margin-left: -25px;
 
   /* Ajustes para imagens */
   .projeto-card img {
-      max-width: 100%; /* Faz as imagens ocuparem a largura total do card */
+      max-width: 90%; /* Limita o tamanho das imagens na seção de projetos */
       height: auto; /* Mantém a proporção */
+      margin: 0 auto; /* Centraliza as imagens */
+      display: block; /* Garante que as imagens sejam tratadas como blocos para centralização */
   }
 
   /* Botão para voltar ao topo */
@@ -378,7 +383,7 @@ margin-left: -25px;
   }
 
   .proj {
-      font-size: 50px; /* Reduz o tamanho da fonte ainda mais */
+      font-size: 30px; /* Reduz o tamanho da fonte do título do projeto final */
   }
 
   .menu a {
