@@ -363,10 +363,21 @@ margin-left: -25px;
     width: 100%; /* Altera para 100% para ocupar toda a largura */
     margin: 0 auto; /* Centraliza o retângulo */
   }
-  .menu {
-      flex-direction: column; /* Muda a direção do menu para coluna */
-      max-width: 100%; /* Altera a largura máxima */
-  }
+  .menur {
+    display: flex;
+    justify-content: center; /* Centraliza o menu */
+    margin-top: 10px; /* Espaçamento opcional entre a introdução e o menu */
+}
+
+.menu {
+    display: flex; /* Mantém os itens do menu em linha */
+    justify-content: center; /* Centraliza os itens do menu */
+    align-items: center; /* Alinha os itens verticalmente */
+    max-width: 100%; /* Garante que o menu não exceda a largura da tela */
+    list-style: none;
+    padding: 0; /* Remove o padding do menu */
+    margin: 0; /* Remove a margem do menu */
+}
 
   .menu li {
       width: 100%; /* Faz os itens do menu ocuparem toda a largura */
