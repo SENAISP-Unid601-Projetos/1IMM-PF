@@ -325,6 +325,7 @@ margin-left: -25px;
   }
   .cabeçalho {
     width: 125%;
+    margin-left: 100px;
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
     margin-left: -25px;
     font-size: 60px; /* Aumenta o tamanho da fonte */
@@ -432,7 +433,7 @@ margin-left: -25px;
     display: flex; /* Mantém os itens do menu em linha */
     justify-content: center; /* Centraliza os itens do menu */
     align-items: center; /* Alinha os itens verticalmente */
-    max-width: 100%; /* Garante que o menu não exceda a largura da tela */
+    max-width: 500px; /* Garante que o menu não exceda a largura da tela */
     list-style: none;
     padding:10px 0; /* Remove o padding do menu */
     margin: 0; /* Remove a margem do menu */
