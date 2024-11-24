@@ -312,7 +312,14 @@ margin-left: -25px;
     margin: 0 auto; /* Centraliza a logo */
     display: block; /* Garante que o comportamento seja de bloco, para centralização */
   }
-
+/* Reduz as imagens em todas as seções */
+img {
+  max-width: 70%; /* Limita a largura máxima das imagens em 90% da tela */
+  width: 100%; /* Garante que a imagem ocupe 100% da largura disponível */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza as imagens */
+  display: block; /* Faz a imagem se comportar como um bloco */
+}
   .intro, .competencias, .programacao, .quem-somos, .projeto-final {
     padding: 30px 10px; /* Reduz o padding */
     font-size: 18px; /* Ajusta o tamanho da fonte */
@@ -327,7 +334,7 @@ margin-left: -25px;
 .quem {
   position: absolute;
   text-align: center;
-  font-size: 80px;
+  font-size: 40px;
   margin-left: 450px;
   color: #fcfbfb;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -335,7 +342,9 @@ margin-left: -25px;
   /* Ajustar a posição para estar entre .segundo e .terc */
   top: calc(100% + 50px); /* Coloca o "Quem Somos" logo abaixo do .segundo */
 }
-
+.proj{
+  font-size: 40px;
+}
 .segundo {
   position: absolute;
   margin-top: 150px;
@@ -346,28 +355,36 @@ margin-left: -25px;
 .terc {
   margin-top: -120px;
 }
-  .menu {
-    flex-direction: column; /* Alinha os itens do menu em coluna */
-    justify-content: center; /* Centraliza os itens do menu */
-    align-items: center; /* Garante que o menu fique centralizado */
-    margin-top: 10px;
-    height: auto;
-    padding: 0;
-  }
+.menu {
+  display: flex; /* Usamos flexbox para os itens */
+  flex-direction: column; /* Colocamos os itens em coluna */
+  justify-content: center; /* Centraliza os itens na direção vertical */
+  align-items: center; /* Centraliza os itens na direção horizontal */
+  width: 100%; /* O menu ocupa toda a largura da tela */
+  padding: 0;
+  margin: 0;
+}
 
-  .menu li {
-    width: 100%; /* Faz os itens do menu ocuparem toda a largura */
-    height: auto;
-    text-align: center; /* Garante que o texto dentro dos itens do menu esteja centralizado */
-    margin-bottom: 10px; /* Espaçamento entre os itens */
-  }
+.menu li {
+  width: 100%; /* Faz os itens do menu ocuparem toda a largura */
+  text-align: center; /* Centraliza o texto dentro dos itens */
+  margin-bottom: 10px; /* Adiciona um pequeno espaço entre os itens do menu */
+}
 
-  .menu li a {
-    font-size: 18px; /* Ajusta o tamanho da fonte no menu */
-    display: block;
-    padding: 10px 0; /* Adiciona um pouco de espaço interno aos itens do menu */
-  }
+.menu li a {
+  font-size: 18px; /* Ajusta o tamanho da fonte para se adequar ao tamanho da tela */
+  color: #fcfbfb;
+  text-decoration: none;
+  display: block; /* Faz com que o link ocupe a largura total do item */
+  padding: 10px 0; /* Espaço vertical dentro dos itens do menu */
+  text-align: center; /* Centraliza o texto dentro do link */
+}
 
+.menu li a:hover {
+  background-color: #d94f5c; /* Altera a cor de fundo ao passar o mouse */
+  color: #fff; /* Muda a cor do texto ao passar o mouse */
+}
+}
   .projeto-card img {
     max-width: 90%; /* Limita a largura das imagens dos projetos */
     margin: 0 auto; /* Centraliza as imagens */
@@ -390,7 +407,6 @@ margin-left: -25px;
     right: 20px; /* Ajusta a posição do botão no canto inferior direito */
     padding: 12px; /* Reduz o padding do botão */
   }
-}
 
 /* Ajuste para telas pequenas (menor que 480px, como celulares) */
 @media (max-width: 480px) {
@@ -407,23 +423,21 @@ margin-left: -25px;
     font-size: 16px; /* Menor tamanho de fonte */
   }
 
+  .menu li a {
+    font-size: 16px; /* Ajusta o tamanho da fonte para telas ainda menores */
+    padding: 12px 0; /* Ajusta o padding para tornar o menu mais acessível */
+  }
+
   .menu {
-    margin-top: 0;
-    flex-direction: column; /* Menu em coluna */
-    justify-content: center; /* Centraliza os itens do menu */
-    align-items: center; /* Garante que o menu esteja centralizado */
+    flex-direction: column; /* Coloca o menu em coluna */
+    align-items: center; /* Garante a centralização horizontal */
   }
 
   .menu li {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px; /* Espaçamento entre os itens */
+    width: 90%; /* Ajusta a largura dos itens do menu */
+    margin: 5px 0; /* Reduz o espaço entre os itens */
   }
 
-  .menu li a {
-    font-size: 16px; /* Ajuste do tamanho da fonte */
-    padding: 10px 0; /* Adiciona mais espaço interno nos itens */
-  }
 /* Ajustes para o "Quem Somos" */
 .quem {
   position: absolute;
