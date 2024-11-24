@@ -302,6 +302,98 @@ margin-left: -25px;
 }
 /* Estilos gerais para dispositivos móveis */
 @media (max-width: 768px) {
+  /* Reduzir o tamanho das imagens */
+  img {
+      max-width: 100%; /* Faz com que todas as imagens não excedam a largura do seu contêiner */
+      height: auto; /* Mantém a proporção da imagem */
+      display: block; /* Garante que as imagens sejam tratadas como blocos para centralização */
+      margin: 0 auto; /* Centraliza as imagens */
+  }
+
+  .header {
+      padding: 20px; /* Reduz o padding do cabeçalho */
+  }
+
+  .logo img {
+      max-width: 200px; /* Reduz o tamanho da logo em telas menores */
+  }
+
+  .intro {
+      padding: 30px 10px; /* Ajusta o padding */
+  }
+
+  .competencias,
+  .programacao,
+  .quem-somos,
+  .projeto-final {
+      padding: 50px 10px; /* Ajusta o padding para seções */
+  }
+
+  .quem {
+      font-size: 40px; /* Reduz o tamanho da fonte para "Quem somos?" */
+  }
+
+  .proj {
+      font-size: 30px; /* Reduz o tamanho da fonte do título do projeto final */
+  }
+
+  .projeto-card {
+      padding: 10px; /* Ajusta o padding dos cards */
+      width: 90%; /* Faz os cards ocuparem 90% da largura */
+      margin: 0 auto; /* Centraliza os cards */
+  }
+
+  .menu {
+      flex-direction: column; /* Muda a direção do menu para coluna */
+      max-width: 100%; /* Altera a largura máxima */
+  }
+
+  .menu li {
+      width: 100%; /* Faz os itens do menu ocuparem toda a largura */
+      margin: 5px 0; /* Espaçamento entre os itens do menu */
+  }
+
+  .menu a {
+      font-size: 18px; /* Ajusta o tamanho da fonte dos links do menu */
+  }
+
+  /* Botão para voltar ao topo */
+  #btnTop {
+      bottom: 10px; /* Ajusta a posição do botão */
+      right: 10px; /* Ajusta a posição do botão */
+      padding: 10px; /* Ajusta o padding do botão */
+  }
+}
+
+/* Estilos para telas menores que 480px */
+@media (max-width: 480px) {
+  /* Reduzir o tamanho das imagens ainda mais */
+  img {
+      max-width: 100%; /* Faz com que todas as imagens não excedam a largura do seu contêiner */
+      height: auto; /* Mantém a proporção da imagem */
+  }
+
+  .header {
+      padding: 10px; /* Reduz ainda mais o padding do cabeçalho */
+  }
+
+  .logo img {
+      max-width: 150px; /* Reduz ainda mais o tamanho da logo */
+  }
+
+  .quem {
+      font-size: 30px; /* Reduz o tamanho da fonte ainda mais */
+  }
+
+  .proj {
+      font-size: 24px; /* Reduz o tamanho da fonte do título do projeto final */
+  }
+
+  .menu a {
+      font-size: 16px; /* Ajusta o tamanho da fonte dos links do menu */
+  }
+}/* Estilos gerais para dispositivos móveis */
+@media (max-width: 768px) {
   .header {
       padding: 40px;
   }
