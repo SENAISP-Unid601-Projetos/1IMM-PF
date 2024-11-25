@@ -387,6 +387,7 @@ img {
     flex: 1; /* Faz com que .prog e .mod ocupem o mesmo espaço */
     text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
     max-width: 48%; /* Limita a largura máxima para que ambas fiquem lado a lado */
+  
   }
 /* Ajustes para o "Quem Somos" */
 .quem {
@@ -476,9 +477,8 @@ img {
     padding: 12px; /* Reduz o padding do botão */
     display: none;
   }
-}
+
 /* Animação para o ícone do menu (em mobile) */
-@media (max-width: 768px) {
   /* Quando o menu é aberto, as barras do menu hambúrguer mudam para um X */
   .menu-toggle.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
@@ -491,9 +491,9 @@ img {
   .menu-toggle.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-}
+
 /* Ajuste para telas pequenas (menor que 480px, como celulares) */
-@media (max-width: 480px) {
+
   .logo img {
     max-width: 70%; /* Logo ainda menor para telas muito pequenas */
   }
@@ -585,13 +585,7 @@ img {
   .prog, .mod {
     flex: 1; /* Faz com que .prog e .mod ocupem o mesmo espaço */
     text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
-    max-width: 70%; /* Limita a largura máxima para que ambas fiquem lado a lado */
-  }
-  /* Ajuste do botão voltar ao topo */
-  #btnTop {
-    bottom: 10px;
-    right: 10px; /* Coloca o botão no canto inferior direito */
-    padding: 10px;
-    display: none;
+    max-width: 60%; /* Limita a largura máxima para que ambas fiquem lado a lado */
+    height: auto;
   }
 }
