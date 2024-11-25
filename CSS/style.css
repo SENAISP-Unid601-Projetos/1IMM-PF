@@ -285,7 +285,7 @@ margin-left: -25px;
   display: none; /* O botão fica invisível até ser necessário */
   position: fixed; /* Fixa o botão na tela mesmo com scroll */
   bottom: 20px; /* Posiciona o botão 20px acima da borda inferior */
-  right: 70px; /* Posiciona o botão 30px à esquerda da borda direita */
+  right: 90px; /* Posiciona o botão 30px à esquerda da borda direita */
   z-index: 99; /* Coloca o botão à frente de outros elementos */
   font-size: 18px; /* Tamanho do texto no botão */
   background-color: #ffffff; /* Cor de fundo do botão */
@@ -383,7 +383,9 @@ img {
     gap: 20px; /* Adiciona um pequeno espaço entre .prog e .mod */
     padding: 20px; /* Ajusta o padding da seção */
   }
-
+.mod{
+  margin-left: -20px;
+}
 /* Ajustes para o "Quem Somos" */
 .quem {
   position: relative;
@@ -490,7 +492,7 @@ img {
   /* Ajuste do botão voltar ao topo */
   #btnTop {
     bottom: 20px;
-    right: 70px; /* Ajusta a posição do botão no canto inferior direito */
+    right: 90px; /* Ajusta a posição do botão no canto inferior direito */
     padding: 12px; /* Reduz o padding do botão */
     display: none;
   }
