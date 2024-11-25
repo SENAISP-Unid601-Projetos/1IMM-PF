@@ -353,7 +353,7 @@ img {
     font-size: 18px; /* Ajusta o tamanho da fonte */
   }
 
-  .comp, .deidas, .hora, .local, .sala1, .grupo1, .segundo, .prog, .mod, .quemsomos, .proj {
+  .comp, .deidas, .hora, .local, .sala1, .grupo1, .segundo, .prog, .mod, .quemsomos, .proj, .alunos, .terc {
     position: relative;
     margin-top: 0;
     margin-left: 0;
