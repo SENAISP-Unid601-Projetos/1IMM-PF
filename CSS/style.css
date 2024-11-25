@@ -285,7 +285,7 @@ margin-left: -25px;
   display: none; /* O botão fica invisível até ser necessário */
   position: fixed; /* Fixa o botão na tela mesmo com scroll */
   bottom: 20px; /* Posiciona o botão 20px acima da borda inferior */
-  right: 30px; /* Posiciona o botão 30px à esquerda da borda direita */
+  right: 70px; /* Posiciona o botão 30px à esquerda da borda direita */
   z-index: 99; /* Coloca o botão à frente de outros elementos */
   font-size: 18px; /* Tamanho do texto no botão */
   background-color: #ffffff; /* Cor de fundo do botão */
