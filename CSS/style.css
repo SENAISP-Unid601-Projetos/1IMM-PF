@@ -112,7 +112,7 @@ margin-left: -25px;
 .quem{
   position: absolute;
   text-align: center;
-  font-size: 80px;
+  font-size: 26px;
   margin-left: 450px;
   margin-top: -230px;
   color: #fcfbfb;
@@ -144,8 +144,8 @@ margin-left: -25px;
   position: absolute;
   text-align: center;
   font-size: 90px;
-  margin-top: -350px;
-  margin-left: 230px;
+  margin-top: -430px;
+  margin-left: 200px;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .projetos {
@@ -307,7 +307,7 @@ margin-left: -25px;
   cursor: pointer; /* Aplica o cursor de mão ao passar o mouse */
   z-index: 15;
   position: absolute;
-  top: 100px; /* Distância do topo */
+  top: 140px; /* Distância do topo */
   left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Ajusta a centralização */
 }
@@ -388,7 +388,7 @@ img {
 .quem {
   position: relative;
   text-align: center;
-  font-size: 40px;
+  font-size: 26px;
   margin-left: 450px;
   color: #fcfbfb;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -513,7 +513,7 @@ img {
   }
   .alunos{
     margin-left: 30px;
-    margin-top: 90px;
+    margin-top: 70px;
   }
   .intro, .competencias, .programacao, .quem-somos, .projeto-final {
     padding: 20px 10px; /* Menos padding para telas pequenas */
@@ -556,12 +556,12 @@ img {
 .segundo {
   position: relative;
   margin-top: 300px;
-  margin-left: -450px;
+  margin-left: -400px;
   z-index: 3;
 }
 
 .terc {
-  margin-top: 130px;
+  margin-top: 90px;
 }
   .projeto-card img {
     width: 100%;
@@ -589,6 +589,6 @@ img {
     text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
     max-width: 60%; /* Limita a largura máxima para que ambas fiquem lado a lado */
     height: 60%;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 }
