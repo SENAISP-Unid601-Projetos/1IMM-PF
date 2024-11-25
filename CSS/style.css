@@ -516,7 +516,7 @@ img {
   }
   .comp, .deidas, .hora, .local, .sala1, .grupo1, .segundo, .prog, .mod, .quemsomos, .proj, .alunos, .terc {
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 70px;
   }
   .intro, .competencias, .programacao, .quem-somos, .projeto-final {
     padding: 20px 10px; /* Menos padding para telas pequenas */
