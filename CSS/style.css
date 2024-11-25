@@ -413,9 +413,7 @@ img {
   z-index: 3;
 }
 
-.terc {
-  margin-top: -20px;
-}
+
 /* O menu é oculto por padrão em dispositivos móveis */
 .menu {
   display: none; /* Oculta o menu inicialmente */
@@ -519,8 +517,8 @@ img {
     margin-left: 60px;
   }
   .alunos{
-    margin-left: -50px;
-    margin-top: 50px;
+    margin-left: 60px;
+    margin-top: 90px;
   }
   .intro, .competencias, .programacao, .quem-somos, .projeto-final {
     padding: 20px 10px; /* Menos padding para telas pequenas */
@@ -528,7 +526,7 @@ img {
     position: relative;
   }
 .deidas{
-  margin-left: 70px;
+  margin-left: 60px;
   width: 70%;
 }
   .menu li a {
@@ -561,13 +559,13 @@ img {
 
 .segundo {
   position: relative;
-  margin-top: 150px;
-  margin-left: -400px;
+  margin-top: 200px;
+  margin-left: -600px;
   z-index: 3;
 }
 
 .terc {
-  margin-top: 100px;
+  margin-top: 130px;
 }
   .projeto-card img {
     width: 100%;
