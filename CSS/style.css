@@ -314,6 +314,7 @@ margin-left: -25px;
 /* Estilo para as barras do menu hambúrguer */
 .menu-toggle .bar {
   display: block;
+  margin-top: 200px;
   width: 30px; /* Largura das barras */
   height: 3px; /* Espessura das barras */
   margin: 5px 0; /* Espaçamento entre as barras */
@@ -400,7 +401,8 @@ img {
   top: calc(100% + 50px); /* Coloca o "Quem Somos" logo abaixo do .segundo */
 }
 .proj{
-  font-size: 40px;
+  font-size: 28px;
+  margin-top: -40px;
 }
 .segundo {
   position: relative;
@@ -431,8 +433,13 @@ img {
 
 .menu li {
   margin: 10px 0;
+  padding-left: 100px; /* Adiciona margem da esquerda de 100px para itens não relacionados aos grupos */
 }
-
+/* Remove a margem da esquerda nos itens dos grupos */
+.menu li a[href^="#g"] {
+  padding-left: 0; /* Remove a margem esquerda dos grupos */
+  text-align: center; /* Centraliza o texto dos itens de grupo */
+}
 /* Exibe o menu hambúrguer apenas em dispositivos móveis */
 .menu-toggle {
   display: block;
@@ -493,6 +500,7 @@ img {
   .cabeçalho {
     transform: scale(1.15); /* Aumenta o tamanho para 115% */
     transform-origin: center center; /* Mantém o aumento centralizado */
+    margin-left: 300px;
   }
   
   /* Aumenta o tamanho do texto dentro de quemcab para 115% */
@@ -500,6 +508,7 @@ img {
     transform: scale(1.15); /* Aumenta o tamanho para 115% */
     transform-origin: center center; /* Mantém o aumento centralizado */
     font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
+    margin-left: 300px;
   }
   .header {
     padding: 30px 10px; /* Diminui o padding */
@@ -542,12 +551,12 @@ img {
 .segundo {
   position: relative;
   margin-top: 150px;
-  margin-left: -300px;
+  margin-left: -400px;
   z-index: 3;
 }
 
 .terc {
-  margin-top: -120px;
+  margin-top: 40px;
 }
   .projeto-card img {
     width: 100%;
@@ -573,7 +582,7 @@ img {
   .prog, .mod {
     flex: 1; /* Faz com que .prog e .mod ocupem o mesmo espaço */
     text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
-    max-width: 48%; /* Limita a largura máxima para que ambas fiquem lado a lado */
+    max-width: 70%; /* Limita a largura máxima para que ambas fiquem lado a lado */
   }
   /* Ajuste do botão voltar ao topo */
   #btnTop {
