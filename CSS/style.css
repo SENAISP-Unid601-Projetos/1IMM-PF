@@ -346,12 +346,7 @@ margin-left: -25px;
     transform-origin: center center; /* Mantém o aumento centralizado */
   }
   
-  /* Aumenta o tamanho do texto dentro de quemcab para 115% */
-  .quemcab {
-    transform: scale(1.15); /* Aumenta o tamanho para 115% */
-    transform-origin: center center; /* Mantém o aumento centralizado */
-    font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
-  }
+
   .logo img {
     max-width: 80%; /* Faz com que a logo ocupe 80% da largura disponível */
     box-shadow: none; /* Remove a sombra em telas pequenas */
@@ -501,8 +496,8 @@ img {
     transform: scale(1.15); /* Aumenta o tamanho para 115% */
     transform-origin: center center; /* Mantém o aumento centralizado */
     font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
-    margin-left: 60px;
-    margin-top: 40px;
+    margin-left: 30px;
+    margin-top: -100px;
   }
   .header {
     padding: 30px 10px; /* Diminui o padding */
@@ -541,24 +536,7 @@ img {
   }
 
 /* Ajustes para o "Quem Somos" */
-.quem {
-  position: relative;
-  text-align: center;
-  font-size: 80px;
-  margin-left: 20px;
-  color: #fcfbfb;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
-  
-  /* Ajustar a posição para estar entre .segundo e .terc */
-  top: calc(100% + 50px); /* Coloca o "Quem Somos" logo abaixo do .segundo */
-}
 
-.segundo {
-  position: relative;
-  margin-top: 300px;
-  margin-left: -400px;
-  z-index: 3;
-}
 
 .terc {
   margin-top: 90px;
