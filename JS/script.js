@@ -14,3 +14,12 @@ function topFunction() {
     document.body.scrollTop = 0; // Para Safari
     document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
 }
+// Selecionando os elementos
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+// Adicionando o evento de clique para alternar o menu
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show'); // Alterna a classe 'show' para mostrar/ocultar o menu
+  menuToggle.classList.toggle('active'); // Adiciona/Remove a classe 'active' para animar o ícone
+});

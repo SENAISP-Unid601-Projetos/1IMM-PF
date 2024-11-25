@@ -300,6 +300,24 @@ margin-left: -25px;
 #btnTop:hover {
   background-color: #ff0000; /* Muda a cor de fundo quando o botão é acionado */
 }
+/* Estilo do botão de menu (hambúrguer) */
+.menu-toggle {
+  display: none; /* O ícone do hambúrguer só aparece em dispositivos móveis */
+  cursor: pointer;
+  z-index: 15; /* Garante que o ícone fique sobre outros elementos */
+  position: absolute;
+  top: 20px; /* Alinha o ícone no topo */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza o ícone horizontalmente */
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #fff;
+}
 /* Ajustes gerais para dispositivos móveis */
 @media (max-width: 768px) {
   .header {
@@ -377,36 +395,29 @@ img {
 .terc {
   margin-top: -120px;
 }
+/* O menu é oculto por padrão em dispositivos móveis */
 .menu {
-  display: flex; /* Usamos flexbox para os itens */
-  flex-direction: column; /* Colocamos os itens em coluna */
-  justify-content: center; /* Centraliza os itens na direção vertical */
-  align-items: center; /* Centraliza os itens na direção horizontal */
-  width: 100%; /* O menu ocupa toda a largura da tela */
-  padding: 0;
-  margin: 0;
+  display: none;
+  position: absolute;
+  top: 60px; /* Distância do menu para o topo da página */
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Cor de fundo do menu */
+  text-align: center;
+  padding: 20px 0;
+  z-index: 10;
 }
 
+/* Quando o botão de menu é clicado, o menu aparece */
+.menu.show {
+  display: block;
+}
+
+/* Estilo dos itens do menu no mobile */
 .menu li {
-  width: 100%; /* Faz os itens do menu ocuparem toda a largura */
-  text-align: center; /* Centraliza o texto dentro dos itens */
-  margin-bottom: 10px; /* Adiciona um pequeno espaço entre os itens do menu */
+  margin: 10px 0; /* Espaçamento vertical entre os itens */
 }
 
-.menu li a {
-  font-size: 18px; /* Ajusta o tamanho da fonte para se adequar ao tamanho da tela */
-  color: #fcfbfb;
-  text-decoration: none;
-  display: block; /* Faz com que o link ocupe a largura total do item */
-  padding: 10px 0; /* Espaço vertical dentro dos itens do menu */
-  text-align: center; /* Centraliza o texto dentro do link */
-}
-
-.menu li a:hover {
-  background-color: #d94f5c; /* Altera a cor de fundo ao passar o mouse */
-  color: #fff; /* Muda a cor do texto ao passar o mouse */
-}
-}
   .projeto-card img {
     max-width: 90%; /* Limita a largura das imagens dos projetos */
     margin: 0 auto; /* Centraliza as imagens */
@@ -430,7 +441,22 @@ img {
     padding: 12px; /* Reduz o padding do botão */
     display: none;
   }
+}
+/* Animação para o ícone do menu (em mobile) */
+@media (max-width: 768px) {
+  /* Quando o menu é aberto, as barras do menu hambúrguer mudam para um X */
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
 /* Ajuste para telas pequenas (menor que 480px, como celulares) */
 @media (max-width: 480px) {
   .logo img {
