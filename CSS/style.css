@@ -615,6 +615,6 @@ img {
     text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
     max-width: 60%; /* Limita a largura máxima para que ambas fiquem lado a lado */
     height: 60%;
-    margin-left: -30px;
+    margin-left: -20px;
   }
 }
