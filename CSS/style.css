@@ -490,7 +490,7 @@ img {
   /* Ajuste do botão voltar ao topo */
   #btnTop {
     bottom: 20px;
-    right: 20px; /* Ajusta a posição do botão no canto inferior direito */
+    right: 70px; /* Ajusta a posição do botão no canto inferior direito */
     padding: 12px; /* Reduz o padding do botão */
     display: none;
   }
