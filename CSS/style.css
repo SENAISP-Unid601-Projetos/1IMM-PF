@@ -303,7 +303,7 @@ margin-left: -25px;
 }
 /* Estilo global para o ícone de menu */
 .menu-toggle {
-  display: block; /* Faz com que o ícone seja visível */
+  display: none; /* Faz com que o ícone seja visível */
   cursor: pointer; /* Aplica o cursor de mão ao passar o mouse */
   z-index: 15;
   position: absolute;
@@ -314,7 +314,7 @@ margin-left: -25px;
 
 /* Estilo para as barras do menu hambúrguer */
 .menu-toggle .bar {
-  display: block;
+  display: none;
   margin-top: 200px;
   width: 30px; /* Largura das barras */
   height: 3px; /* Espessura das barras */
@@ -415,7 +415,27 @@ img {
   padding: 20px 0;
   z-index: 10;
 }
+/* Estilo global para o ícone de menu */
+.menu-toggle {
+  display: block; /* Faz com que o ícone seja visível */
+  cursor: pointer; /* Aplica o cursor de mão ao passar o mouse */
+  z-index: 15;
+  position: absolute;
+  top: 140px; /* Distância do topo */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a centralização */
+}
 
+/* Estilo para as barras do menu hambúrguer */
+.menu-toggle .bar {
+  display: block;
+  margin-top: 200px;
+  width: 30px; /* Largura das barras */
+  height: 3px; /* Espessura das barras */
+  margin: 5px 0; /* Espaçamento entre as barras */
+  background-color: #fff; /* Cor das barras */
+  transition: all 0.3s ease; /* Transição suave para animação */
+}
 .menu.show {
   display: block; /* Exibe o menu quando a classe "show" é adicionada */
 }
