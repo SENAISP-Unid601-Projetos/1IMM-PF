@@ -416,7 +416,8 @@ img {
   top: 60px; /* Distância do topo para o menu */
   left: 0;
   width: 100%;
-  background-color: #333; /* Cor de fundo do menu */
+  height: 400px;
+  background-color: #530202; /* Cor de fundo do menu */
   text-align: center;
   padding: 20px 0;
   z-index: 10;
