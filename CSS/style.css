@@ -408,13 +408,13 @@ img {
 }
 .segundo {
   position: relative;
-  margin-top: 150px;
-  margin-left: -300px;
+  margin-top: 200px;
+  margin-left: -600px;
   z-index: 3;
 }
 
 .terc {
-  margin-top: -120px;
+  margin-top: -20px;
 }
 /* O menu é oculto por padrão em dispositivos móveis */
 .menu {
