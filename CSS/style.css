@@ -300,151 +300,65 @@ margin-left: -25px;
 #btnTop:hover {
   background-color: #ff0000; /* Muda a cor de fundo quando o botão é acionado */
 }
-/* Estilo do botão de menu (hambúrguer) */
+/* Estilo global para o ícone de menu */
 .menu-toggle {
-  display: none; /* O ícone do hambúrguer só aparece em dispositivos móveis */
-  cursor: pointer;
-  z-index: 15; /* Garante que o ícone fique sobre outros elementos */
+  display: block; /* Faz com que o ícone seja visível */
+  cursor: pointer; /* Aplica o cursor de mão ao passar o mouse */
+  z-index: 15;
   position: absolute;
-  top: 20px; /* Alinha o ícone no topo */
-  left: 50%;
-  transform: translateX(-50%); /* Centraliza o ícone horizontalmente */
+  top: 10px; /* Distância do topo */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta a centralização */
 }
 
+/* Estilo para as barras do menu hambúrguer */
 .menu-toggle .bar {
   display: block;
-  width: 30px;
-  height: 3px;
-  margin: 5px 0;
-  background-color: #fff;
+  width: 30px; /* Largura das barras */
+  height: 3px; /* Espessura das barras */
+  margin: 5px 0; /* Espaçamento entre as barras */
+  background-color: #fff; /* Cor das barras */
+  transition: all 0.3s ease; /* Transição suave para animação */
 }
-/* Ajustes gerais para dispositivos móveis */
+
+/* Efeito quando o menu está aberto (transformação do ícone para "X") */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg); /* Primeira barra se move e rotaciona */
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0; /* A segunda barra desaparece */
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg); /* Terceira barra se move e rotaciona */
+}
+/* Estilo dos itens em mobile */
 @media (max-width: 768px) {
-  .header {
-    padding: 50px 20px; /* Reduz o padding */
-  }
-  .cabeçalho {
-    transform: scale(1.15); /* Aumenta o tamanho para 115% */
-    transform-origin: center center; /* Mantém o aumento centralizado */
-  }
-  
-  /* Aumenta o tamanho do texto dentro de quemcab para 115% */
-  .quemcab {
-    transform: scale(1.15); /* Aumenta o tamanho para 115% */
-    transform-origin: center center; /* Mantém o aumento centralizado */
-    font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
-  }
-  .logo img {
-    max-width: 80%; /* Faz com que a logo ocupe 80% da largura disponível */
-    box-shadow: none; /* Remove a sombra em telas pequenas */
-    margin: 0 auto; /* Centraliza a logo */
-    display: block; /* Garante que o comportamento seja de bloco, para centralização */
-  }
-/* Reduz as imagens em todas as seções */
-img {
-  max-width: 70%; /* Limita a largura máxima das imagens em 90% da tela */
-  width: 100%; /* Garante que a imagem ocupe 100% da largura disponível */
-  height: auto; /* Mantém a proporção da imagem */
-  margin: 0 auto; /* Centraliza as imagens */
-  display: block; /* Faz a imagem se comportar como um bloco */
-}
-  .intro, .competencias, .programacao, .quem-somos, .projeto-final {
-    padding: 30px 10px; /* Reduz o padding */
-    font-size: 18px; /* Ajusta o tamanho da fonte */
-  }
-
-  .comp, .deidas, .hora, .local, .sala1, .grupo1, .segundo, .prog, .mod, .quemsomos, .proj, .alunos, .terc {
-    position: relative;
-    margin-top: 0;
-    margin-left: 0;
-  }
-  .programacao {
-    display: flex; /* Usamos flexbox para alinhar as seções lado a lado */
-    justify-content: space-between; /* Espaço entre as duas seções */
-    gap: 20px; /* Adiciona um pequeno espaço entre .prog e .mod */
-    padding: 20px; /* Ajusta o padding da seção */
-  }
-
-  .prog, .mod {
-    flex: 1; /* Faz com que .prog e .mod ocupem o mesmo espaço */
-    text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
-    max-width: 48%; /* Limita a largura máxima para que ambas fiquem lado a lado */
-  }
-/* Ajustes para o "Quem Somos" */
-.quem {
-  position: absolute;
-  text-align: center;
-  font-size: 40px;
-  margin-left: 450px;
-  color: #fcfbfb;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
-  
-  /* Ajustar a posição para estar entre .segundo e .terc */
-  top: calc(100% + 50px); /* Coloca o "Quem Somos" logo abaixo do .segundo */
-}
-.proj{
-  font-size: 40px;
-}
-.segundo {
-  position: absolute;
-  margin-top: 150px;
-  margin-left: -300px;
-  z-index: 3;
-}
-
-.terc {
-  margin-top: -120px;
-}
-/* O menu é oculto por padrão em dispositivos móveis */
-.menu {
-  display: none;
-  position: absolute;
-  top: 60px; /* Distância do menu para o topo da página */
-  left: 0;
-  width: 100%;
-  background-color: #333; /* Cor de fundo do menu */
-  text-align: center;
-  padding: 20px 0;
-  z-index: 10;
-}
-
-/* Quando o botão de menu é clicado, o menu aparece */
-.menu.show {
-  display: block;
-}
-
-/* Estilo dos itens do menu no mobile */
-.menu li {
-  margin: 10px 0; /* Espaçamento vertical entre os itens */
-}
-
-  .projeto-card img {
-    max-width: 90%; /* Limita a largura das imagens dos projetos */
-    margin: 0 auto; /* Centraliza as imagens */
-    display: block; /* Garante o comportamento de bloco para centralização */
-  }
-
-  .projeto-card h2 {
-    font-size: 30px; /* Ajusta o tamanho da fonte do título */
-    text-align: center; /* Centraliza o título */
-  }
-
-  .footer {
-    padding: 30px 10px; /* Reduz o padding do rodapé */
-    font-size: 14px; /* Ajusta o tamanho da fonte */
-  }
-
-  /* Ajuste do botão voltar ao topo */
-  #btnTop {
-    bottom: 20px;
-    right: 20px; /* Ajusta a posição do botão no canto inferior direito */
-    padding: 12px; /* Reduz o padding do botão */
+  .menu {
     display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 10;
   }
-}
-/* Animação para o ícone do menu (em mobile) */
-@media (max-width: 768px) {
-  /* Quando o menu é aberto, as barras do menu hambúrguer mudam para um X */
+
+  .menu.show {
+    display: block;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
   .menu-toggle.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -456,101 +370,58 @@ img {
   .menu-toggle.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+/* Estilo do conteúdo (tudo centralizado) */
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px; /* Ajusta para que o conteúdo não sobreponha o menu fixo */
 }
-/* Ajuste para telas pequenas (menor que 480px, como celulares) */
-@media (max-width: 480px) {
-  .logo img {
-    max-width: 70%; /* Logo ainda menor para telas muito pequenas */
-  }
-  .cabeçalho {
-    transform: scale(1.15); /* Aumenta o tamanho para 115% */
-    transform-origin: center center; /* Mantém o aumento centralizado */
-  }
-  
-  /* Aumenta o tamanho do texto dentro de quemcab para 115% */
-  .quemcab {
-    transform: scale(1.15); /* Aumenta o tamanho para 115% */
-    transform-origin: center center; /* Mantém o aumento centralizado */
-    font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
-  }
-  .header {
-    padding: 30px 10px; /* Diminui o padding */
-  }
 
-  .intro, .competencias, .programacao, .quem-somos, .projeto-final {
-    padding: 20px 10px; /* Menos padding para telas pequenas */
-    font-size: 16px; /* Menor tamanho de fonte */
-  }
-
-  .menu li a {
-    font-size: 16px; /* Ajusta o tamanho da fonte para telas ainda menores */
-    padding: 12px 0; /* Ajusta o padding para tornar o menu mais acessível */
-  }
-
-  .menu {
-    flex-direction: column; /* Coloca o menu em coluna */
-    align-items: center; /* Garante a centralização horizontal */
-  }
-
-  .menu li {
-    width: 90%; /* Ajusta a largura dos itens do menu */
-    margin: 5px 0; /* Reduz o espaço entre os itens */
-  }
-
-/* Ajustes para o "Quem Somos" */
-.quem {
-  position: absolute;
+.intro, .competencias, .programacao, .projeto-final {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0;
   text-align: center;
-  font-size: 80px;
-  margin-left: 450px;
-  color: #fcfbfb;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
-  
-  /* Ajustar a posição para estar entre .segundo e .terc */
-  top: calc(100% + 50px); /* Coloca o "Quem Somos" logo abaixo do .segundo */
+  padding: 20px;
+  background-color: #d50100;
+  color: #fff;
 }
 
-.segundo {
-  position: absolute;
-  margin-top: 150px;
-  margin-left: -300px;
-  z-index: 3;
+.intro {
+  background-color: #d50100;
 }
 
-.terc {
-  margin-top: -120px;
+.competencias {
+  background-color: #d50100;
 }
-  .projeto-card img {
-    width: 100%;
-    height: auto; /* Garante que a imagem se ajuste à tela */
-    margin: 0 auto; /* Centraliza as imagens */
-  }
 
-  .projeto-card h2 {
-    font-size: 26px; /* Reduz o tamanho da fonte do título */
-  }
+.programacao {
+  background-color: #d50100;
+}
 
-  .footer {
-    padding: 20px 10px;
-    font-size: 12px; /* Reduz o tamanho da fonte no rodapé */
-  }
-  .programacao {
-    display: flex; /* Usamos flexbox para alinhar as seções lado a lado */
-    justify-content: space-between; /* Espaço entre as duas seções */
-    gap: 20px; /* Adiciona um pequeno espaço entre .prog e .mod */
-    padding: 20px; /* Ajusta o padding da seção */
-  }
+.projeto-final {
+  background-color: #d50100;
+}
+img {
+  width: 80%; /* Reduz todas as imagens para 80% apenas em dispositivos móveis */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-  .prog, .mod {
-    flex: 1; /* Faz com que .prog e .mod ocupem o mesmo espaço */
-    text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
-    max-width: 48%; /* Limita a largura máxima para que ambas fiquem lado a lado */
-  }
-  /* Ajuste do botão voltar ao topo */
-  #btnTop {
-    bottom: 10px;
-    right: 10px; /* Coloca o botão no canto inferior direito */
-    padding: 10px;
-    display: none;
-  }
+.logo img {
+  width: 80%; /* Logo também reduzida para 80% */
+}
+
+.projeto-card img {
+  width: 80%; /* Reduz as imagens dentro dos cards de projeto */
+}
+
+.bolinhas, .bolinhas2 {
+  width: 80%; /* Reduz as imagens de bolinhas */
+}
 }
