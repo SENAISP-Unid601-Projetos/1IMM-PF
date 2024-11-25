@@ -406,7 +406,7 @@ img {
 .segundo {
   position: relative;
   margin-top: 200px;
-  margin-left: -500px;
+  margin-left: -550px;
   z-index: 3;
 }
 
@@ -415,9 +415,9 @@ img {
 .menu {
   display: none; /* Oculta o menu inicialmente */
   position: absolute;
-  top: 140px; /* Distância do topo para o menu */
-  left: 60px;
-  width: 400px;
+  top: 160px; /* Distância do topo para o menu */
+  left: 50px;
+  width: 420px;
   height: 800px;
   background-color: #da0303ad; /* Cor de fundo do menu */
   text-align: center;
@@ -580,7 +580,7 @@ img {
 .segundo {
   position: relative;
   margin-top: 300px;
-  margin-left: -500px;
+  margin-left: -550px;
   z-index: 3;
 }
 
@@ -613,6 +613,6 @@ img {
     text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
     max-width: 60%; /* Limita a largura máxima para que ambas fiquem lado a lado */
     height: 60%;
-    margin-left: 0px;
+    margin-left: -10px;
   }
 }
