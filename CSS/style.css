@@ -144,8 +144,8 @@ margin-left: -25px;
   position: absolute;
   text-align: center;
   font-size: 90px;
-  margin-top: -290px;
-  margin-left: 260px;
+  margin-top: -350px;
+  margin-left: 230px;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .projetos {
@@ -493,7 +493,7 @@ img {
   .cabeçalho {
     transform: scale(1.15); /* Aumenta o tamanho para 115% */
     transform-origin: center center; /* Mantém o aumento centralizado */
-    margin-left: 70px;
+    margin-left: 60px;
   }
   
   /* Aumenta o tamanho do texto dentro de quemcab para 115% */
@@ -501,7 +501,8 @@ img {
     transform: scale(1.15); /* Aumenta o tamanho para 115% */
     transform-origin: center center; /* Mantém o aumento centralizado */
     font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
-    margin-left: 70px;
+    margin-left: 60px;
+    margin-top: 40px;
   }
   .header {
     padding: 30px 10px; /* Diminui o padding */
@@ -511,7 +512,7 @@ img {
     margin-left: 60px;
   }
   .alunos{
-    margin-left: 60px;
+    margin-left: 30px;
     margin-top: 90px;
   }
   .intro, .competencias, .programacao, .quem-somos, .projeto-final {
@@ -544,7 +545,7 @@ img {
   position: relative;
   text-align: center;
   font-size: 80px;
-  margin-left: -450px;
+  margin-left: 20px;
   color: #fcfbfb;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
   
@@ -554,8 +555,8 @@ img {
 
 .segundo {
   position: relative;
-  margin-top: 200px;
-  margin-left: -600px;
+  margin-top: 300px;
+  margin-left: -450px;
   z-index: 3;
 }
 
@@ -588,6 +589,6 @@ img {
     text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
     max-width: 60%; /* Limita a largura máxima para que ambas fiquem lado a lado */
     height: 60%;
-    margin-left: -90px;
+    margin-left: 10px;
   }
 }
