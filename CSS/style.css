@@ -400,13 +400,13 @@ img {
   font-size: 28px;
   margin-top: -190px;
   margin-left: -60px;
-  top: -40px;
-  left: -20px;
+  top: -50px;
+  left: -30px;
 }
 .segundo {
   position: relative;
   margin-top: 200px;
-  margin-left: -400px;
+  margin-left: -500px;
   z-index: 3;
 }
 
@@ -416,10 +416,10 @@ img {
   display: none; /* Oculta o menu inicialmente */
   position: absolute;
   top: 140px; /* Distância do topo para o menu */
-  left: 20px;
-  width: 100px;
-  height: 900px;
-  background-color: #530202; /* Cor de fundo do menu */
+  left: 60px;
+  width: 400px;
+  height: 800px;
+  background-color: #da0303ad; /* Cor de fundo do menu */
   text-align: center;
   padding: 20px 0;
   z-index: 10;
@@ -580,7 +580,7 @@ img {
 .segundo {
   position: relative;
   margin-top: 300px;
-  margin-left: -400px;
+  margin-left: -500px;
   z-index: 3;
 }
 
