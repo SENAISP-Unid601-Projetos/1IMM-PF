@@ -387,8 +387,8 @@ img {
   .prog, .mod {
     flex: 1; /* Faz com que .prog e .mod ocupem o mesmo espaço */
     text-align: center; /* Centraliza o conteúdo dentro de .prog e .mod */
-    max-width: 48%; /* Limita a largura máxima para que ambas fiquem lado a lado */
-  
+    max-width: 60%; /* Limita a largura máxima para que ambas fiquem lado a lado */
+    margin-left: -30px;
   }
 /* Ajustes para o "Quem Somos" */
 .quem {
@@ -501,7 +501,7 @@ img {
   .cabeçalho {
     transform: scale(1.15); /* Aumenta o tamanho para 115% */
     transform-origin: center center; /* Mantém o aumento centralizado */
-    margin-left: 50px;
+    margin-left: 70px;
   }
   
   /* Aumenta o tamanho do texto dentro de quemcab para 115% */
@@ -509,14 +509,18 @@ img {
     transform: scale(1.15); /* Aumenta o tamanho para 115% */
     transform-origin: center center; /* Mantém o aumento centralizado */
     font-size: 115%; /* Aumenta o tamanho da fonte para 115% */
-    margin-left: 50px;
+    margin-left: 70px;
   }
   .header {
     padding: 30px 10px; /* Diminui o padding */
   }
   .comp, .deidas, .hora, .local, .sala1, .grupo1, .segundo, .prog, .mod, .quemsomos, .proj, .alunos, .terc {
     margin-top: 0;
-    margin-left: 70px;
+    margin-left: 60px;
+  }
+  .alunos{
+    margin-left: -50px;
+    margin-top: 50px;
   }
   .intro, .competencias, .programacao, .quem-somos, .projeto-final {
     padding: 20px 10px; /* Menos padding para telas pequenas */
@@ -524,7 +528,7 @@ img {
     position: relative;
   }
 .deidas{
-  margin-left: 50px;
+  margin-left: 70px;
   width: 70%;
 }
   .menu li a {
