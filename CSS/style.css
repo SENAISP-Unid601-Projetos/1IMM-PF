@@ -513,7 +513,10 @@ img {
   .header {
     padding: 30px 10px; /* Diminui o padding */
   }
-
+  .comp, .deidas, .hora, .local, .sala1, .grupo1, .segundo, .prog, .mod, .quemsomos, .proj, .alunos, .terc {
+    margin-top: 0;
+    margin-left: 50px;
+  }
   .intro, .competencias, .programacao, .quem-somos, .projeto-final {
     padding: 20px 10px; /* Menos padding para telas pequenas */
     font-size: 16px; /* Menor tamanho de fonte */
