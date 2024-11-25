@@ -307,7 +307,7 @@ margin-left: -25px;
   cursor: pointer; /* Aplica o cursor de mão ao passar o mouse */
   z-index: 15;
   position: absolute;
-  top: 10px; /* Distância do topo */
+  top: 100px; /* Distância do topo */
   left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Ajusta a centralização */
 }
@@ -521,6 +521,7 @@ img {
   }
 .deidas{
   margin-left: 60px;
+  margin-top: 40px;
   width: 70%;
 }
   .menu li a {
